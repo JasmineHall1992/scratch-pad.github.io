@@ -13,26 +13,36 @@
  * work?
  */
 
-
+//I: input string
+//O: Return the length
+//C: none
+//E: none
 
 
 function length(string) {
     // YOUR CODE BELOW HERE //
-
-   
-    
-    // YOUR CODE ABOVE HERE //
+  //return the strings length (use.length)
+    return string.length
 }
+    // YOUR CODE ABOVE HERE //
+
 
 /**
  * Given an input String, return a new String forced to lowercase.
  */
+//I: give an input string
+//O: return a new string forced to lowercase
+//C: n/a
+//E: n/a
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
-   
-
-    // YOUR CODE ABOVE HERE //
+   //return a new string
+        return string.toLowerCase();
 }
+    // YOUR CODE ABOVE HERE //
+
+
+
 
 /**
  * Given an input String, return a new String forced to uppercase.
