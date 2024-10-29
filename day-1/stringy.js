@@ -47,13 +47,15 @@ function toLowerCase(string) {
 /**
  * Given an input String, return a new String forced to uppercase.
  */
+
+//I: input a string
+//O: new string forced to uppercase
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
-
-
-
-    // YOUR CODE ABOVE HERE //
+    //return parameter with action
+    return string.toUppercase();
 }
+    // YOUR CODE ABOVE HERE //
 
 /**
  * Given an input String, return a new String forced to dash-case.
