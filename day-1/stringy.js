@@ -39,6 +39,10 @@ function toLowerCase(string) {
    //return a new string
         return string.toLowerCase();
 }
+    //declare a variable
+    const word = "HELLO!";
+    //console log with the new variable and the function
+    console.log(tolowerCase(word));
     // YOUR CODE ABOVE HERE //
 
 
@@ -55,6 +59,10 @@ function toUpperCase(string) {
     //return parameter with action
     return string.toUppercase();
 }
+// declare a new variable
+    const newWord = "goodbye";
+//console log new variable with function
+    console.log(toUpperCase(newWord));
     // YOUR CODE ABOVE HERE //
 
 /**
@@ -72,7 +80,7 @@ function toUpperCase(string) {
  */
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-
+        //return dash case 
 
 
     // YOUR CODE ABOVE HERE //
