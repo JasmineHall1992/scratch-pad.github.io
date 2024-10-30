@@ -231,7 +231,7 @@ function sortAscending(stringOne, stringTwo) {
     return stringOne.localeCompare(stringTwo);
 }
 //console log with two strings
-console.log(sortAscending("surfing","running"));//
+console.log(sortAscending("surfing","running"));//output is 1 because surfing is after running
     // YOUR CODE ABOVE HERE //
 
 
