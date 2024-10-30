@@ -112,7 +112,7 @@ function toDashCase(string) {
 //E: function is case insensitive, so make all the same case
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-        //return value with lowering the case and also begins with
+        //return value with both string and character lower case, also check if string begins with character
     return string.toLowerCase().beginsWith(character.toLowerCase());
 }
      //console log
