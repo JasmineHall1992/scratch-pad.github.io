@@ -151,13 +151,19 @@ function endsWith(string, char) {
  *
  * TIP: What's the operator to concatenate two Strings?
  */
+//I: input two strings
+//O: return two strings concatenated as one
+//C: n/a
+//E: n/a
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
-
-    // YOUR CODE ABOVE HERE //
+    //return a concatenation of two strings using a plus operator
+    return stringOne + stringTwo;
 }
+ //console log a concatenated string using the function name
+    console.log(concat('Jasmine',"rules!"));
+    // YOUR CODE ABOVE HERE //
+
 
 /**
  * Given any number of Strings, return all of them joined together.
