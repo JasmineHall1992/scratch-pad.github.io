@@ -175,13 +175,22 @@ function concat(stringOne, stringTwo) {
  * TIP: This Function pulls out all the arguments passed to it and stores them
  *      in an Array called args.
  */
+
+//I: input any number of strings
+//O: return all strings joined
+//C: none
+//E: n/a
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+    // all the arguments (parameters) are stored with an array called args
     var args = Array.from(arguments);
-
-
-    // YOUR CODE ABOVE HERE //
+     //return with action (join)
+     return args.join();
 }
+//console log with function name and parameters
+    console.log(join("Jasmine","is","beautiful!"));//
+    // YOUR CODE ABOVE HERE //Jasmine is beautiful!
+
 
 /**
  * Given two Strings, return the longest of the two.
