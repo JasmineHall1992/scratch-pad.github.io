@@ -229,10 +229,11 @@ function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     // return string using a js method which compares two strings to see which one comes first
     return stringOne.localeCompare(stringTwo);
+}
 //console log with two strings
 console.log(sortAscending("surfing","running"));//
     // YOUR CODE ABOVE HERE //
-}
+
 
 
 /**
