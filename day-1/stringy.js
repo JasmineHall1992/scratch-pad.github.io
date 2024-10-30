@@ -80,8 +80,8 @@ function toUpperCase(string) {
  */
 //I: input a string
 //O: return a new string
-//C: string is required to have a dash case
-//E: n/a
+//C: lowercase must be enforced
+//E: string must have a dash casee
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
         //return dash case 
@@ -90,7 +90,7 @@ function toDashCase(string) {
      //declare variable
      const myString = "Hello coders!"
      //console log with new variable
-     console.log(string(myString));
+     console.log(myString.replace("","-");
     // YOUR CODE ABOVE HERE //
 
 
