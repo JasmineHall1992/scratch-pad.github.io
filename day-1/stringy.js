@@ -227,9 +227,10 @@ function longest(stringOne, stringTwo) {
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
-
+    // return string using a js method which compares two strings to see which one comes first
+    return stringOne.localeCompare(stringTwo);
+//console log with two strings
+console.log("biking".localeCompare("surfing"));
     // YOUR CODE ABOVE HERE //
 }
 
