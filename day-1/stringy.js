@@ -161,7 +161,7 @@ function concat(stringOne, stringTwo) {
     return stringOne + stringTwo;
 }
  //console log a concatenated string using the function name
-    console.log(concat('Jasmine',"rules!"));
+    console.log(concat('Homework', 'sucks!'));
     // YOUR CODE ABOVE HERE //
 
 
