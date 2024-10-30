@@ -78,13 +78,21 @@ function toUpperCase(string) {
  *
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
  */
+//I: input a string
+//O: return a new string
+//C: string is required to have a dash case
+//E: n/a
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
         //return dash case 
-
-
-    // YOUR CODE ABOVE HERE //
+        return string.toDashCase();
 }
+     //declare variable
+     const myString = "Hello coders!"
+     //console log with new variable
+     console.log(string(myString));
+    // YOUR CODE ABOVE HERE //
+
 
 /**
  * Given an input String and a single character, return true if the String
