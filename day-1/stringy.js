@@ -113,7 +113,7 @@ function toDashCase(string) {
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
         //return value with both string and character lower case, also check if string begins with character
-    return string.toLowerCase().beginsWith(character.toLowerCase());
+    return string.toLowerCase().beginsWith(char.toLowerCase());
 }
      //console log
     console.log(beginsWith("Coders","c"));//This will log true
@@ -132,13 +132,19 @@ function beginsWith(string, char) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+//I: input string and single character
+//O: return true if string ends with a character, false otherwise
+//C: n/a
+//E: function is case insensitive
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-
-
-    // YOUR CODE ABOVE HERE //
+     // return parameter with action (making lower case), make sure string ends with character as well
+     return string.toLowerCase().endsWith(char.toLowerCase());
 }
+     //console log function with parameter
+     console.log(endsWith('Jasmine','e'))//This will log true
+    // YOUR CODE ABOVE HERE //
+
 
 /**
  * Given two input Strings, return the Strings concatenated into one.
