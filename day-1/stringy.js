@@ -230,7 +230,7 @@ function sortAscending(stringOne, stringTwo) {
     // return string using a js method which compares two strings to see which one comes first
     return stringOne.localeCompare(stringTwo);
 //console log with two strings
-console.log("biking".localeCompare("surfing"));
+console.log(sortAscending("surfing","running"));//
     // YOUR CODE ABOVE HERE //
 }
 
@@ -244,12 +244,14 @@ console.log("biking".localeCompare("surfing"));
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
-
+    //return strings with (locale compare action)
+    return stringOne.localeCompare(stringTwo);
+}
+   //console log with function name and strings
+  console.log(sortDescending("Jasmine","Luke"));//output -1 (Jasmine is before Luke)
 
     // YOUR CODE ABOVE HERE //
-}
+
 
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
