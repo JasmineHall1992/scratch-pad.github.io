@@ -18,17 +18,25 @@
  *
  *  TIPS:
  *  a. create something to collect the output you'll return.
- *  b. you'll need a loop, which one is best?
+ *  b. you'll need a loop, which one is best? (for loop)
  *  c. you'll wanna make use of the push() method of Array.
  */
+
+//I: two inttegers as parameters in the function
+//O: returns an array containing all integers (numbers) between the parameters, loop through using for loop (array)
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
-    
-    
+    // make an empty array to hold the numbers
+    var result = [];
+        for (var i = start; i <= end; i++); {
+      //use the push method for the array
+        result.push();
+        }
+     //return the array
+        return result;
+}    
     // YOUR CODE GOES ABOVE HERE //
-}
+
 
 
 
