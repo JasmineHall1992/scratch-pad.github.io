@@ -84,14 +84,18 @@ function getObjectValues(object) {
  * Given an input Object, loop over the Object and print its values 
  * using console.log().
  */
+//I: input object, loop over the object
+//O: print objects values using console log
 function printObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
-  
+  // loop over object (use for in loop)
+  for (var key in object) {
+    //print each value in the object by accessing the key
+    console.log(object[key]);
+  }
+}  
   // YOUR CODE ABOVE HERE //
-}
+
 
 /** 
  * Given an input Object, return the number of key/value pairs stored within that Object.
