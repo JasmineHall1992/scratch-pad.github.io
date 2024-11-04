@@ -13,7 +13,7 @@
 function printArrayValues(array) {
   // YOUR CODE BELOW HERE //
   //loop over the array
-  for (let i= 0; i < array.length; i++) {
+  for (var i= 0; i < array.length; i++) {
     //this [i] will print each value in the array
     console.log(array[i]);
   }  
@@ -26,7 +26,11 @@ function printArrayValues(array) {
  */
 function printArrayValuesInReverse(array) {
   // YOUR CODE BELOW HERE //
-  
+  //loop backwards over the array, start at the last value, end at the 0 index, minus 1
+  for (var i = array.length - 1; i >= 0; i--) {
+    // this [i] will print each value in the array
+    console.log(array[i]);
+  }
   
   
   
