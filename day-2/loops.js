@@ -30,27 +30,28 @@ function printArrayValuesInReverse(array) {
   for (var i = array.length - 1; i >= 0; i--) {
     // this [i] will print each value in the array
     console.log(array[i]);
-  }
-  
-  
-  
+ }
   // YOUR CODE ABOVE HERE //
 }
 
 /** 
  * Given an input Object, return an Array containing the Object keys.
  */
+//I: an input Object
+//O: return an array containing all the keys of the Object
 function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  
-
-  // YOUR CODE ABOVE HERE //
+  //return the keys in the object, use parameter as argument
+  return Object.keys(object);
 }
+  // YOUR CODE ABOVE HERE //
 
 /** 
  * Given an input Object, loop over the Object and print its keys 
  * using console.log().
  */
+
+
 function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
   
