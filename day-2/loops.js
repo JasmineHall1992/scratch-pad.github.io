@@ -100,12 +100,13 @@ function printObjectValues(object) {
 /** 
  * Given an input Object, return the number of key/value pairs stored within that Object.
  */
+//I: input object
+//O: return the number of key value pairs within the object (for in loop)
 function getObjectLength(object) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
-  
+  for (var key in Object) {
+    return object.key(object);
+  }
   // YOUR CODE ABOVE HERE //
 }
 
