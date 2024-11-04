@@ -56,7 +56,7 @@ function getObjectKeys(object) {
 
 function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  //loop over
+  //loop through
   for (var key in object) {
     //print each key to the console
     console.log(key);
@@ -66,17 +66,17 @@ function printObjectKeys(object) {
   
   
   // YOUR CODE ABOVE HERE //
-}
+
 
 /** 
  * Given an input Object, return an Array containing the Object's values.
  */
+// I: an input object
+// O: an array containing the objects values
 function getObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
-  
+  //return the array with dot notation with object as an argument
+  return Object.array(object);
   // YOUR CODE ABOVE HERE //
 }
 
