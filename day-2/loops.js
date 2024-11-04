@@ -51,10 +51,17 @@ function getObjectKeys(object) {
  * using console.log().
  */
 
+//I: an input Object, loop over the object, use for in loop since the keys are IN the object
+//O: print the objects keys using console.log???
 
 function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  
+  //loop over
+  for (var key in object) {
+    //print each key to the console
+    console.log(key);
+  } 
+}
   
   
   
