@@ -13,9 +13,14 @@
  */
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
-   
-    
+    //I: base as a parameter this could be a string or a number
+//O: return a function that tests whether value is > than base
+function createGreaterThanFilter(base) {
+    // YOUR CODE BELOW HERE //
+    //create a function for the return value
+  return function(value) {
+  return value > base;
+};        
     // YOUR CODE ABOVE HERE //
 }
 
@@ -27,8 +32,10 @@ function createGreaterThanFilter(base) {
  */
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
-  
+    return function(value) {
+    return value < base;
+    }
+}
     
     
     // YOUR CODE ABOVE HERE //
