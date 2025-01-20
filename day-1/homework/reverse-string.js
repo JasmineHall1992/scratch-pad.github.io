@@ -18,15 +18,25 @@
  *  c. how do you access individual characters of a String?
  *  d. how do you concatenate Strings? What operator do we use?
  */
+/*
+//*
+I: input a string, this is represented by "input"
+O: return the string reversed
+C: n/a
+E: n/a
+*/
 
 function reverseString(input) {
-    // YOUR CODE GOES BELOW HERE //
-    
-    
-    
-    
+    //use the split method to turn the input string into an array
+    const splitString = input.split(" ");
+    //use the reverse method to reverse the newly created array
+    const reversedArray = splitString.reverse();
+    //use the join method to join all the elements of the array back into a string
+    const joinedArray = reversedArray.join(" ");
+    //return the new reversed string
+    return joinedArray;
     // YOUR CODE GOES ABOVE HERE //
-}
+};
 
 
 
