@@ -30,8 +30,14 @@ function length(string) {
 /**
  * Given an input String, return a new String forced to lowercase.
  */
+//**
+//I: input a string
+//O: output a new string that is forced to lowercase
+//C: must only be lowercase
+//E: n/a
 function toLowerCase(string) {
-    // YOUR CODE BELOW HERE //
+    // convert the input string to lowercase and return it
+    return string.toLowerCase();
    
 
     // YOUR CODE ABOVE HERE //
@@ -40,8 +46,14 @@ function toLowerCase(string) {
 /**
  * Given an input String, return a new String forced to uppercase.
  */
+//I: input a string
+//O: return a new string forced to uppercase
+//C: must be uppercased
+//E: n/a
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
+    //return a new string that has been forced uppercase
+    return string.toUpperCase();
 
 
 
@@ -61,11 +73,18 @@ function toUpperCase(string) {
  *
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
  */
+//I: input a string
+//O: return it dash cased
+//C: n/a
+//E: n/a
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-
-
-
+    //convert string to lowerCase
+    const lowerCased = string.toLowerCase();
+    //convert string to dash case
+    const newString = lowerCased.replace(/\s+/g, '-');
+    //return converted string
+    return newString;
     // YOUR CODE ABOVE HERE //
 }
 
@@ -81,6 +100,10 @@ function toDashCase(string) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+
+//I: an input string and a single character
+//O: return true if the string begins with a character
+//C: the function is insensitive
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
