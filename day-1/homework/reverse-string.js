@@ -27,16 +27,22 @@ E: n/a
 */
 
 function reverseString(input) {
-    //use the split method to turn the input string into an array
-    const splitString = input.split(" ");
-    //use the reverse method to reverse the newly created array
-    const reversedArray = splitString.reverse();
-    //use the join method to join all the elements of the array back into a string
-    const joinedArray = reversedArray.join(" ");
-    //return the new reversed string
-    return joinedArray;
-    // YOUR CODE GOES ABOVE HERE //
-};
+  // Initialize an empty string to collect the reversed result
+  let reversed = "";
+
+  // Loop through the input string from the last character to the first
+  for (let i = input.length - 1; i >= 0; i--) {
+    // Access each character and add it to the reversed string
+    reversed += input[i];
+  }
+
+  // Return the reversed string
+  return reversed;
+}
+
+// Example usage
+console.log(reverseString('hello'));  // => 'olleh'
+console.log(reverseString('world'));  // => 'dlrow'
 
 
 
