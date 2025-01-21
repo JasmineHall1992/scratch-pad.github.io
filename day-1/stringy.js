@@ -210,11 +210,17 @@ function longest(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
-function sortAscending(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
-
+    function sortAscending(stringOne, stringTwo) {
+        if (stringOne < stringTwo) {
+          return 1; // stringOne is alphabetically lower than stringTwo
+        } else if (stringOne > stringTwo) {
+          return -1; // stringOne is alphabetically higher than stringTwo
+        } else {
+          return 0; // stringOne is alphabetically equal to stringTwo
+        }
+      }
     // YOUR CODE ABOVE HERE //
-}
+
 
 
 /**
@@ -224,14 +230,20 @@ function sortAscending(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
-function sortDescending(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
-
-
-
+    function sortDescending(stringOne, stringTwo) {
+        if (stringOne < stringTwo) {
+          return -1; // stringOne is alphabetically lower than stringTwo
+        } else if (stringOne > stringTwo) {
+          return 1; // stringOne is alphabetically higher than stringTwo
+        } else {
+          return 0; // stringOne is alphabetically equal to stringTwo
+        }
+      }
+      
+     
 
     // YOUR CODE ABOVE HERE //
-}
+
 
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
