@@ -2,6 +2,8 @@
 
 'use strict';
 
+const { sortedIndexOf } = require("lodash");
+
 /**
  * IN CLASS EXERCISE: stringy.js
  */
@@ -105,12 +107,14 @@ function toDashCase(string) {
 //O: return true if the string begins with a character
 //C: the function is insensitive
 function beginsWith(string, char) {
-    // YOUR CODE BELOW HERE //
+    // Convert both the string and char to lowercase to ensure case insensitivity
+    string = string.toLowerCase();
+    char = char.toLowerCase();
 
-    
-
-    // YOUR CODE ABOVE HERE //
+    // Use the startsWith method to check if the string begins with the character
+    return string.startsWith(char);
 }
+
 
 /**
  * Given an input String and a single character, return true if the String
@@ -124,11 +128,16 @@ function beginsWith(string, char) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+//I: a string and a single character
+//O: true if the string enfds with a character, false if not
+//C: this is case insensitive
+//E:
 function endsWith(string, char) {
-    // YOUR CODE BELOW HERE //
-
-
-
+    // change both the string and character to lowercase to make case insensitive
+    string = string.toLowerCase();
+    char = char.toLowerCase();
+    //return the string if it ends with a character
+    return string.endsWith(char);
     // YOUR CODE ABOVE HERE //
 }
 
@@ -137,10 +146,13 @@ function endsWith(string, char) {
  *
  * TIP: What's the operator to concatenate two Strings?
  */
+//I: two input strings
+//O: the strings concatenated into one
+//C: n/a
+//E: n/a
 function concat(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
-
-
+    // use the + operator to concatenate the two
+    return stringOne + stringTwo;
 
     // YOUR CODE ABOVE HERE //
 }
@@ -155,10 +167,13 @@ function concat(stringOne, stringTwo) {
  * TIP: This Function pulls out all the arguments passed to it and stores them
  *      in an Array called args.
  */
+//I: any number of strings
+//O: return them all joined together
 function join(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
+//this pulls out all the arguments passed to it and stores them in an array
     var args = Array.from(arguments);
-
+//return the array joined together
+    return args.join('');
 
     // YOUR CODE ABOVE HERE //
 }
@@ -172,13 +187,21 @@ function join(stringOne, stringTwo) {
  *
  * TIP: What property of the String do we need to compare?
  */
+//I: two strings
+//O: reutn the longest of the two
+//tip: compare a property of the string
 function longest(stringOne, stringTwo) {
-    // YOUR CODE BELOW HERE //
-
+    //use an if statement to compare the two
+    if (stringOne.length > stringTwo.length) {
+        return stringOne;
+    } else {
+        return stringTwo;
+    }
+}
 
 
     // YOUR CODE ABOVE HERE //
-}
+
 
 /**
  * Given two Strings, return 1 if the first string is higher in alphabetical order (meaning earlier in the alphabet) than
