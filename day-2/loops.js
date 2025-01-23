@@ -11,12 +11,9 @@
  * using console.log().
  */
 function printArrayValues(array) {
-  // YOUR CODE BELOW HERE //
-  
-  
-  
-  
-  // YOUR CODE ABOVE HERE //
+  for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
 }
 
 /** 
@@ -24,86 +21,73 @@ function printArrayValues(array) {
  * using console.log().
  */
 function printArrayValuesInReverse(array) {
-  // YOUR CODE BELOW HERE //
-  
-  
+  for (let i = array.length - 1; i >= 0; i--) {
+    console.log(array[i]);
+  }
+}
+
+
   
   
   // YOUR CODE ABOVE HERE //
-}
+
 
 /** 
  * Given an input Object, return an Array containing the Object keys.
  */
 function getObjectKeys(object) {
-  // YOUR CODE BELOW HERE //
-  
-
-  // YOUR CODE ABOVE HERE //
+  return Object.keys(object);
 }
+
 
 /** 
  * Given an input Object, loop over the Object and print its keys 
  * using console.log().
  */
 function printObjectKeys(object) {
-  // YOUR CODE BELOW HERE //
-  
-  
-  
-  
-  // YOUR CODE ABOVE HERE //
+  for (let key in object) {
+    console.log(key);
+  }
 }
+
 
 /** 
  * Given an input Object, return an Array containing the Object's values.
  */
 function getObjectValues(object) {
-  // YOUR CODE BELOW HERE //
-  
-  
-  
-  
-  // YOUR CODE ABOVE HERE //
+  return Object.values(object);
 }
+
 
 /** 
  * Given an input Object, loop over the Object and print its values 
  * using console.log().
  */
 function printObjectValues(object) {
-  // YOUR CODE BELOW HERE //
-  
-  
-  
-  
-  // YOUR CODE ABOVE HERE //
+  for (let key in object) {
+    console.log(object[key]);
+  }
 }
 
 /** 
  * Given an input Object, return the number of key/value pairs stored within that Object.
  */
 function getObjectLength(object) {
-  // YOUR CODE BELOW HERE //
-  
-  
-  
-  
-  // YOUR CODE ABOVE HERE //
+  return Object.keys(object).length;
 }
+
 
 /** 
  * Given an input Object, how might we loop over the Object IN REVERSE and 
  * print its values using console.log()?
  */
 function printObjectValuesInReverse(object) {
-  // YOUR CODE BELOW HERE //
-  
-  
-  
-  
-  // YOUR CODE ABOVE HERE //
+  const values = Object.values(object); // Get the values
+  for (let i = values.length - 1; i >= 0; i--) {
+    console.log(values[i]);
+  }
 }
+
 
 
 
