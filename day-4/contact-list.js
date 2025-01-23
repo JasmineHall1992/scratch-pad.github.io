@@ -48,7 +48,9 @@ function makeContactList() {
     
     return {
         // we implemented the length api for you //
-       
+       length: function(){
+        return contacts.length;
+       },
     }
 }
 
