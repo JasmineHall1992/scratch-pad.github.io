@@ -22,7 +22,15 @@
  *  c. you'll wanna make use of the push() method of Array.
  */
 function range(start, end) {
-    // YOUR CODE GOES BELOW HERE //
+    // create an output variable to return the new array
+    var output = [];
+    //use a for loop to loop through the array, use the start and end parameters
+    for (let i = start; i <= end; i++){
+    //push the index into the output array
+    output.push(i);    
+    }
+    return output;
+    
     
     
     
