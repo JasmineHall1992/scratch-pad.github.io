@@ -10,12 +10,19 @@
  * Given an input value, return true if the value is an Array, false if otherwise.
  * 
  * TIP: In JavaScript, how can we decipher if a value is an Array? Can typeof
- * work?
+ * work? no. use Array.isArray
  * 
  * HINT: There is a method that can help with this.
  */
+//I: an input value
+//O: return true if the value is an array, false otherwise
 function isArray(value) {
-    // YOUR CODE BELOW HERE //
+    // test if value is an array
+    if (Array.isArray(value)){
+        return true;
+    } else {
+        return false;
+    }
     
     
     
@@ -27,7 +34,7 @@ function isArray(value) {
 
 /** 
  * Given an input value, return true if the value is an Object intended as a 
- * collection, false if otherwise.
+ * collection, false if otherwise. This is using array.array, instanceof, typeof
  * 
  * TIP: In JavaScript, how can we decipher if a value is an Object, but not 
  * null, not an Array, not a Date - all of these will return 'object' if used 
@@ -36,15 +43,18 @@ function isArray(value) {
  * HINT: look up how to figure out if something is an instance of the Date object.
  * 
  */
+//I: an input valie
 function isObject(value) {
-    // YOUR CODE BELOW HERE //
-    
+    //test if a value is an object intended as a collection
+    //test if the value is an object but not null, but not an array and not a date
+    return value !== null && typeof value === 'object' && !Array.isArray(value) && !(value instanceof Date);
+ };
 
     
     
     
     // YOUR CODE ABOVE HERE //
-}
+
 
 
 
@@ -54,14 +64,19 @@ function isObject(value) {
  * 
  * TIP: Similar to isObject, but we must return true if the value is an Array.
  */
+//I: input value
+//O: return true if it is an array or object, false otherwise
 function isCollection(value) {
-    // YOUR CODE BELOW HERE //
-    
+    // Check if the value is an Array or a non-null object
+    return Array.isArray(value) || 
+           (typeof value === 'object' && value !== null && !(value instanceof Date));
+}
+
     
     
     
     // YOUR CODE ABOVE HERE //
-}
+
 
 /**
  * Given an input value, return the type of the value as a String
@@ -83,13 +98,24 @@ function isCollection(value) {
  *    typeOf([1,2,3]) -> "array"
  */ 
 function typeOf(value) {
-    // YOUR CODE BELOW HERE //
+    if (Array.isArray(value)) {
+        return "array";
+    }
+    if (value === null) {
+        return "null";
+    }
+    if (value instanceof Date) {
+        return "date";
+    }
+    return typeof value;
+}
+ 
     
     
     
     
     // YOUR CODE ABOVE HERE //
-}
+
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&

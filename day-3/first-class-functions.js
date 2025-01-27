@@ -96,14 +96,28 @@ function createEndsWithFilter(endsWith) {
  * TIP: You need to loop over the Strings, right? We need to pass each String to 
  * the modify Function, but we need to collect the results into some collection.
  */
+//I: an array of strings and a function designed to modify a string
+//O: an array of strings modified
+//C: n/a
+//E: n/a
 function modifyStrings(strings, modify) {
-    // YOUR CODE BELOW HERE //
-    
+    //make an output array to collect the results
+    const output = [];
+    //loop over the strings array
+    for (let i = 0; i < strings.length; i++){
+    // apply the callback function (modify) to the current string in the loop, make it a variable
+    const modifiedString = modify(strings[i]);
+    //add the new modifiedString to the output array
+    output.push(modifiedString);    
+    }
+    //return the output array
+    return output;
+}
     
     
     
     // YOUR CODE ABOVE HERE //
-}
+
 
 
 
@@ -117,14 +131,32 @@ function modifyStrings(strings, modify) {
  * 
  * TIP: You need to loop over the Strings, right? And pass them to the test?
  */
+//I: an array of strings and a callback function designed to test the string
+//O: return a boolean on whether the string passed the test, return true if all strings pass the test
+//Remember to loop over the strings and pass them to the test
 function allStringsPass(strings, test) {
-    // YOUR CODE BELOW HERE //
+    // Loop over each string in the array
+    for (let i = 0; i < strings.length; i++) {
+        // Call the test function on the current string
+        if (!test(strings[i])) {
+            // If any string fails the test, return false
+            return false;
+        }
+    }
+    // If all strings pass the test, return true
+    return true;
+}
+   
+   //return true if all the strings pass the test
+
+        
+    
     
     
     
     
     // YOUR CODE ABOVE HERE //
-}
+
 
 
 
