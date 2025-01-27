@@ -44,19 +44,52 @@ function makeContact(id, nameFirst, nameLast) {
 
 
 
+// a. Create makeContact factory function
+function makeContact(id, nameFirst, nameLast) {
+    return { id, nameFirst, nameLast };
+}
+
+// b. Create makeContactList factory function
 function makeContactList() {
-    /*
-     * You need something here to hold contacts. See length api for a hint:
-     */
-    var contacts = [];
+    // The list to store contacts
+    let contacts = [];
     
     return {
-        // we implemented the length api for you //
-       length: function(){
-        return contacts.length;
-       },
-    }
+        // 1. length() method
+        length: function() {
+            return contacts.length;
+        },
+        
+        // 2. addContact(contact) method
+        addContact: function(contact) {
+            contacts.push(contact);
+        },
+        
+        // 3. findContact(fullName) method
+        findContact: function(fullName) {
+            return contacts.find(contact => 
+                `${contact.nameFirst} ${contact.nameLast}` === fullName
+            );
+        },
+        
+        // 4. removeContact(contact) method
+        removeContact: function(contact) {
+            const index = contacts.indexOf(contact);
+            if (index !== -1) {
+                contacts.splice(index, 1);
+            }
+        },
+        
+        // 5. printAllContactNames() method
+        printAllContactNames: function() {
+            return contacts.map(contact => 
+                `${contact.nameFirst} ${contact.nameLast}`
+            ).join('\n');
+        }
+    };
 }
+
+
 
 makeContactList(); // => { length: function(){}, addContact: function(){}, findContact: function(){}  }
 
